@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button color='light'></ion-back-button>
+    </ion-button>
+    <ion-title>ACCUEIL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-button routerLink="/profile">Profile</ion-button>
+  <ion-button (click)="liste()">Liste des personnes connecté</ion-button>
+  <ion-button routerLink="/recherche">Recherche</ion-button>
+</ion-content>

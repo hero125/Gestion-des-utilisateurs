@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 class="padding" text-center>INSCRIPTION</h2>
+  <form class="padding" #test="ngForm" (ngSubmit)=register(test) >
+    <div class="padding">
+    
+     <ion-item>
+        <ion-label color="light">NOM</ion-label>
+        <ion-input type="text" name="nom" ngModel color="light" placeholder="NOM"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="light">PRENOM</ion-label>
+        <ion-input type="text" name="prenom" ngModel color="light" placeholder="PRENOM"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="light">Email</ion-label>
+        <ion-input type="email" name="email" ngModel color="light" placeholder="Adresse email"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label color="light">Mots de passe</ion-label>
+        <ion-input type="password" name="password" ngModel color="light" placeholder="Mots de passe"></ion-input>
+      </ion-item>
+
+    
+
+    
+    
+      <br/>
+    
+      <ion-button shape="round" expand="block" type="submit">INSCRIPTION</ion-button>
+  
+    </div>
+  </form>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button color='light'></ion-back-button>
+    </ion-button>
+    
+    <ion-title>Liste</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let l of mesListe">
+    <label for="">
+      <h2>{{l.nom}} {{l.prenom}}</h2>
+      {{l.email}}
+    </label>
+
+  </ion-item>
+</ion-list>
+</ion-content>
